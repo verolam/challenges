@@ -14,6 +14,6 @@
   - 10.Increasing-Decreasing
   - 11.Counting-Persons-By-Gender
   - 12.Smallest-And-Biggest-Number
-  - 13.Mobile-Menu-Sorin : project I ve chosen to include it into my dev-blog
+  - 13.Mobile-Menu-Sorin : project I ve chosen to include into my dev-blog
 
 Thanks to Sorin Paun.
