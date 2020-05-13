@@ -1,6 +1,6 @@
 # My Challenges
 
-### All challenges I have done in { Powercoders } :)
+### All challenges I have done in { Powercoders } 
 
   - 01.Calculate-Surface
   - 02.Playlist
