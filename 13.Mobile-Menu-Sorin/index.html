@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Menu </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="assets/img/style.css">
+</head>
+
+<body>
+
+  <header id="top-header" class="top-header row">
+
+      <figure id="logo" class="logo">Vero logo</figure>
+
+      <div id="nav-triggers" class="nav-triggers">
+        <a id="open-menu" class="open-menu trigger"><img src="assets/img/fonts/burger-icon.svg" alt="burger icon"></a>
+        <a id="close-menu" class="close-menu trigger"><img src="assets/img/fonts/close-icon.svg" alt="close icon"></a>
+      </div>
+
+      <nav id="main-nav" class="main-nav">
+        <ul id="menu" class="menu row">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    
+  </header>
+
+  <main>
+
+   
+
+  </main>
+
+  <footer class="AC">
+    <p>some &copy;2019 by nobody</p>
+  </footer>
+
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
+  <!-- <script src="main.js"></script> -->
+
+  <script>
+    //VANILLA JS VARIANT
+    const body = document.querySelector("body");
+    const openMenu = document.querySelector("#open-menu");
+    const closeMenu = document.querySelector("#close-menu");
+
+    openMenu.addEventListener('click', function(event) {
+      body.classList.add('menu-is-open');
+    });
+
+    closeMenu.addEventListener('click', function(event) {
+      body.classList.remove('menu-is-open');
+    });
+
+    window.addEventListener('scroll', function(event) {
+      scrollPos = window.scrollY; //console.log(scrollPos);
+
+      if(scrollPos > 81) {
+        body.classList.add('header-is-fixed');
+      }
+      else {
+        body.classList.remove('header-is-fixed');
+      }
+    });
+
+    //jQuery VARIANTE (if library activated above)
+    /*
+    $('#open-menu').on('click', function() {
+      $('body').addClass('menu-is-open');
+    });
+    $('#close-menu').on('click', function() {
+      $('body').removeClass('menu-is-open');
+    });
+    */
+  </script>
+
+</body>
+</html>
